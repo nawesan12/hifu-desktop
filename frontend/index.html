@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Hifu - IDE</title>
+</head>
+<body>
+    <div id="hifu">
+        <div class="loading-screen">
+          <div class="loading-container">
+            <h2>Hifu!</h2>
+            <p>Loading...</p>
+            <img alt="Hifu!" class="loading-screen-img" src="https://avatars.dicebear.com/api/big-smile/${random}.svg"/>
+          </div>
+        </div>
+  
+        <main>
+          <aside class="menu">
+            <img src="/thunder.webp" alt="Hifu!" id="img-logo" loading="lazy"/>
+            <menu>
+                <button id="new-tab" title="Open in a new tab">
+                  <svg   viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M6 17.6l-2 -1.1v-2.5" />
+                    <path d="M4 10v-2.5l2 -1.1" />
+                    <path d="M10 4.1l2 -1.1l2 1.1" />
+                    <path d="M18 6.4l2 1.1v2.5" />
+                    <path d="M20 14v2.5l-2 1.12" />
+                    <path d="M14 19.9l-2 1.1l-2 -1.1" />
+                    <line x1="12" y1="12" x2="14" y2="10.9" />
+                    <line x1="18" y1="8.6" x2="20" y2="7.5" />
+                    <line x1="12" y1="12" x2="12" y2="14.5" />
+                    <line x1="12" y1="18.5" x2="12" y2="21" />
+                    <path d="M12 12l-2 -1.12" />
+                    <line x1="6" y1="8.6" x2="4" y2="7.5" />
+                  </svg>
+                </button>
+                <button id="copy-to-clipboard" title="Copy to clipboard">
+                  <svg viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M15 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M18 17h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h4l5 5v7a2 2 0 0 1 -2 2z" />
+                    <path d="M16 17v2a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h2" />
+                  </svg>
+                </button>
+                <button id="save" title="Save progress">
+                  <svg   viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M6 4h10l4 4v10a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2" />
+                    <circle cx="12" cy="14" r="2" />
+                    <polyline points="14 4 14 8 8 8 8 4" />
+                  </svg>
+                </button>
+                <button id="download" title="Download project">
+                  <svg   viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                    <polyline points="7 11 12 16 17 11" />
+                    <line x1="12" y1="4" x2="12" y2="16" />
+                  </svg>
+                </button>
+                <button id="share" title="Share in Coda">
+                  <svg viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="6" cy="12" r="3" />
+                    <circle cx="18" cy="6" r="3" />
+                    <circle cx="18" cy="18" r="3" />
+                    <line x1="8.7" y1="10.7" x2="15.3" y2="7.3" />
+                    <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
+                  </svg>
+                </button>
+            </menu>
+            <footer>
+              <button id="settings" title="Settings">
+                <svg   viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </button>
+            </footer>
+            <section id="settings-menu" class="hidden">
+              <menu>
+                <div class="option" title="Chosee a theme for the IDE">
+                  <label for="theme">Theme</label>
+                  <select id="theme">
+                    <option value="vs-dark">Dark</option>
+                    <option value="vs-light">Light</option>
+                  </select>
+                </div>
+                <div class="option" title="Choose a CSS library">
+                  <label for="css-library">CSS Library</label>
+                  <select id="css-library">
+                    <option value="">None</option>
+                    <option value="bootstrap">Bootstrap</option>
+                    <option value="bulma">Bulma</option>
+                    <option value="materialize">Materialize</option>
+                  </select>
+                </div>
+                <!-- <div class="option" title="Change font size">
+                  <label for="font-size">Font Size</label>
+                  <select id="font-size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                  </select>
+                </div> -->
+              </menu>
+            </section>
+          </aside>
+          <section class="ide-container">
+            <section id="html">
+              <img src="/assets/html.webp" alt="HTML" loading="lazy" style="height:7.5vh;width:7.5vh">
+            </section>
+            <section id="css">
+              <img src="/assets/css.webp" alt="CSS" loading="lazy" style="height:7.5vh;width:7.5vh">
+            </section>
+            <section id="js">
+              <img src="/assets/js.webp" alt="JS" loading="lazy" style="height:7.5vh;width:7.5vh">
+            </section>
+            <div class="result-container">
+              <iframe id="output" srcdoc=""></iframe>
+              <button class="fullscreen-btn">
+                <svg class="maximize" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M4 8v-2a2 2 0 0 1 2 -2h2" />
+                  <path d="M4 16v2a2 2 0 0 0 2 2h2" />
+                  <path d="M16 4h2a2 2 0 0 1 2 2v2" />
+                  <path d="M16 20h2a2 2 0 0 0 2 -2v-2" />
+                </svg>
+              </button>
+            </div>
+          </section>
+          <footer class="copyright">
+            <p>Powered by 
+              <a href="https://nsantillan.tech/en">Nahuel Santillan</a>
+            </p>        
+          </footer>
+        </main>
+      </div>
+  
+      <div class="advertisement">
+        <h3>Hifu works better in PC!</h3>
+  
+        <section class="socials">
+          <p>But you still can visit my <a href="https://nsantillan.tech/en">website</a>!</p>
+          <span></span>
+        </section>
+      </div>
+<script src="./src/main.ts" type="module"></script>
+</body>
+</html>
